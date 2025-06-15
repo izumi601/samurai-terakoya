@@ -1,0 +1,42 @@
+shimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mkdir git_challenge
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git init
+Reinitialized existing Git repository in /Users/ishimotoidzumi/git_tutorial/.git/
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % touch hello_world.txt
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mv hello_world.txt ./git_challenge
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git add .
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git commit -m "1回目のコミット"
+[main 827126c] 1回目のコミット
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+ delete mode 100644 git_tutoria
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git add .
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git commit -m"2回目のコミット"
+[main 9b90164] 2回目のコミット
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git log --oneline
+9b90164 (HEAD -> main) 2回目のコミット
+827126c 1回目のコミット
+55dfcdb 2回目のコミット
+acb9ece 最初のコミット
+4881a7a (origin/main) Move sample.txt to move_test directory
+fa5c153 最初のコミット
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mkdir kadai_005
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % touch kadai005.txt
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mv kadai005.txt ./kadai005
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git add .
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git commit -m
+error: switch `m' requires a value
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git commit -m"課題テキストをはる"
+[main d041571] 課題テキストをはる
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 kadai005
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mv kadai.txt kadai005/
+mv: rename kadai.txt to kadai005/: No such file or directory
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mv kadai.txt kadai_005/
+mv: rename kadai.txt to kadai_005/kadai.txt: No such file or directory
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % mv kadai_005.txt kadai_005/
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git add .
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % git commit -m"課題テキスト"
+[main ca8c2e8] 課題テキスト
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename kadai005 => kadai_005/kadai_005.txt (100%)
+ishimotoidzumi@ishimotoidzuminoMacBook-Pro git_tutorial % 
